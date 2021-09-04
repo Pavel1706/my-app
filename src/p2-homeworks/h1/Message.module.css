@@ -1,0 +1,59 @@
+
+.all {
+    background-color: lavenderblush;
+    margin: 50px;
+    display: flex;
+    width: 400px;
+}
+
+.avatar img {
+    border: solid 1px grey;
+    border-radius: 30%;
+    background-position: top;
+
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+
+}
+
+.message {
+    /*align-items:flex-end;*/
+    /*margin-left: 0px;*/
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.shape {
+    margin-left: 5px;
+    left: 115px;
+    top: 120px;
+    border-bottom: 25px solid grey;
+    border-right: 25px solid transparent;
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+}
+
+.name {
+    float: left;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.text {
+    /*float: top;*/
+    /*position: absolute;*/
+    display: flow;
+    top: 30px;
+    color: black;
+}
+
+.time {
+    color: crimson;
+    float: right;
+}
+

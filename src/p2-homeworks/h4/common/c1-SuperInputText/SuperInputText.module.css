@@ -1,0 +1,23 @@
+.input:focus {
+    outline: none;
+    border: black solid 2px;
+}
+
+.superInput {
+margin : 5px;
+    background: lightpink;
+    color:#61dafb;
+}
+
+.errorInput {
+    margin: 5px;
+    color: aquamarine;
+    border: 3px solid lime;
+    background: red;
+}
+
+.error {
+    color: red;
+    height: 15px;
+    margin-left: 15px;
+}
