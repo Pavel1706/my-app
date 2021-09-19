@@ -7,18 +7,22 @@ import HW2 from "./p2-homeworks/h2/HW2";
 import HW3 from "./p2-homeworks/h3/HW3";
 import HW4 from "./p2-homeworks/h4/HW4";
 import HW5 from './p2-homeworks/h5/HW5';
+import {Grid, Paper} from "@material-ui/core";
 
 
 function App() {
-  return (
-    <div className="App">
-      <HW1 />
-        <HW2 />
-        <HW3  />
-      <HW4 />
-        <HW5 />
-    </div>
-  );
+    return (
+
+        <div className="App">
+
+            {/*<HW1 />*/}
+            {/*  <HW2 />*/}
+            {/*  <HW3  />*/}
+            {/*<HW4 />*/}
+            <HW5/>
+
+        </div>
+    );
 }
 
 export default App;

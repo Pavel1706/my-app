@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import Affairs, {AffairsPropsType} from './Affairs'
 import p from './Affairs.module.css'
+import {Container, Paper} from "@material-ui/core";
+import { Grid } from '@material-ui/core';
 
 
 export type AffairPriorityType = 'high'|'low'|'middle'
@@ -41,6 +43,7 @@ function HW2() {
         <div className='mainmenu' >
             <hr/>
             homeworks 2
+            {/*<Container fixed>*/}
 
             <Affairs
                 data={filteredAffairs}
@@ -49,6 +52,8 @@ function HW2() {
                 filter={filter}
             />
 
+
+            {/*</Container>*/}
         </div>
     )
 }

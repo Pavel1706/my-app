@@ -2,6 +2,7 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import p from './Affairs.module.css'
+import {Button, Grid, TextField} from '@material-ui/core'
 
 export type AffairsPropsType = {
     data: Array<AffairType>
@@ -12,11 +13,14 @@ export type AffairsPropsType = {
 
 function Affairs(props: AffairsPropsType) {
     const mappedAffairs = props.data.map((a: AffairType) =>  (
+        <Grid container direction='column'>
+
         <Affair
             key={a._id}
             affair={a}
             deleteAffairCallback={props.deleteAffairCallback}
         />
+        </Grid>
     ))
 
     const setAll = () => {
@@ -40,10 +44,12 @@ function Affairs(props: AffairsPropsType) {
     return (
         <div  className={p.mainmenu}>
             {mappedAffairs}
-            <button onClick={setAll} className={cAll}>All</button>
-            <button onClick={setHigh} className={cHigh}>High</button>
-            <button onClick={setMiddle} className={cMiddle}>Middle</button>
-            <button onClick={setLow} className={cLow}>Low</button>
+
+            <Button  color='primary' onClick={setAll} className={cAll}>All</Button>
+            <Button color='secondary' onClick={setHigh} className={cHigh}>High</Button>
+            <Button color='inherit' onClick={setMiddle} className={cMiddle}>Middle</Button>
+            <Button color='primary' onClick={setLow} className={cLow}>Low</Button>
+
         </div>
     )
 }
