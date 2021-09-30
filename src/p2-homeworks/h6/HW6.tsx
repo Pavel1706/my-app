@@ -12,7 +12,7 @@ function HW6() {
     const restore = () => {
         // const state: StateType = restoreState<StateType>('test', {x: '', y: 0})
         //
-         let total = restoreState('editable-span-value', '')
+        let total = restoreState('editable-span-value', '')
         setValue(total)
     }
 
