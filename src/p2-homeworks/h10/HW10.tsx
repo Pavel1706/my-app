@@ -10,7 +10,7 @@ import store, {AppStoreType} from "./bll/store";
 export function HW10() {
   const dispatch = useDispatch()
     const loading = useSelector<AppStoreType, boolean>(state=>state.loading.loading)
-    
+
 
     const setLoading = () => {
         dispatch(loadingAC(!loading))
